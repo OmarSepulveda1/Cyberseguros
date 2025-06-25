@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amenazas Comunes - CiberSeguros</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+ <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">SeguridadDigital</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Amenazas</a></li>
+          <li class="nav-item"><a class="nav-link" href="consejos.html">Consejos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    
+
+  <!-- Sección de amenazas -->
+  <div class="container mt-5 bg-dark">
+    <h2 class="text-center mb-4">Amenazas Cibernéticas Comunes</h2>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Phishing</h5>
+            <p class="card-text">Intento de engañar a los usuarios para obtener información confidencial.</p>
+            <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#phishingInfo">Más info</button>
+            <div class="collapse" id="phishingInfo">
+              <p class="mt-2">Casos reales incluyen correos bancarios falsos y suplantación de identidad en redes sociales.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Ransomware</h5>
+            <p class="card-text">Malware que bloquea el acceso a datos hasta que se paga un rescate.</p>
+            <button class="btn btn-outline-danger" data-bs-toggle="collapse" data-bs-target="#ransomwareInfo">Más info</button>
+            <div class="collapse" id="ransomwareInfo">
+              <p class="mt-2">Ejemplo: ataque WannaCry que afectó hospitales en todo el mundo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Malware</h5>
+            <p class="card-text">Software malicioso que daña o roba datos.</p>
+            <button class="btn btn-outline-warning" data-bs-toggle="collapse" data-bs-target="#malwareInfo">Más info</button>
+            <div class="collapse" id="malwareInfo">
+              <p class="mt-2">Incluye virus, troyanos, spyware, etc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Ataques DDoS</h5>
+            <p class="card-text">Inundan un servidor con tráfico falso, dejándolo inoperable.</p>
+            <button class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#ddosInfo">Más info</button>
+            <div class="collapse" id="ddosInfo">
+              <p class="mt-2">Ejemplo: caída de servicios como Twitter o Netflix por ataques masivos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carrusel  -->
+    <h3 class="text-center mt-5 ">Casos Reales</h3>
+    <div id="casosCarousel" class="carousel slide mt-3" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center">
+            <div class="card" style="width: 25rem;">
+              <div class="card-body">
+                <h5 class="card-title">Ataque SolarWinds</h5>
+                <p class="card-text">Una brecha de seguridad que comprometió agencias gubernamentales de EE.UU</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Equifax 2017</h5>
+                <p class="card-text">Fuga de datos personales de más de 140 millones de personas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Facebook 2019</h5>
+                <p class="card-text">Cientos de millones de contraseñas de usuarios almacenadas sin cifrar.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#casosCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#casosCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    &copy; 2025 Ciberseguridad Informativa - Todos los derechos reservados.
+  </footer>
+</body>
+</html>
